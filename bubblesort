@@ -2,9 +2,9 @@
 #include<conio.h>
 int main(){
 	int i,j,k,l[50],temp;
-	printf("Enter the total numbers that you have to sort out");
+	printf("Enter the total numbers that you have to sort out :");
 	scanf("%d",&j);
-	printf("Enter the numbers");
+	printf("Enter the numbers :");
 	for(i=0;i<j;i++)
 	{
 		scanf("%d",&l[i]);
@@ -12,7 +12,7 @@ int main(){
 	
 	for(i=1;i<j;i++)
 	{
-		for(k=0;k<j-i;j++)
+		for(k=0;k<j-i;k++)
 		{
 			if(l[k]>l[k+1])
 			{
@@ -22,10 +22,11 @@ int main(){
 			}
 		}
 	}
-
+    printf("The sorted list is:");
 	for(i=0;i<j;i++)
 	{
-		printf("%d",l[i]);
+		printf("%d\t",l[i]);
+		
 	}
-	
+	return 0;
 }
